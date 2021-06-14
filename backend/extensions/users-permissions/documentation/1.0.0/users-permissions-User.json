@@ -1257,7 +1257,6 @@
               "required": [
                 "id",
                 "title",
-                "date",
                 "type",
                 "uuid"
               ],
@@ -1269,9 +1268,6 @@
                   "type": "string"
                 },
                 "content": {
-                  "type": "string"
-                },
-                "date": {
                   "type": "string"
                 },
                 "type": {
@@ -1293,7 +1289,79 @@
                 "author": {
                   "type": "string"
                 },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "likes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "post": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "image": {
+            "type": "string",
+            "default": "/uploads/default_6c2aaf4db6.png"
+          },
+          "likes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "post": {
                   "type": "string"
                 },
                 "created_by": {
@@ -1347,6 +1415,22 @@
             "type": "string"
           },
           "posts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image": {
+            "type": "string",
+            "default": "/uploads/default_6c2aaf4db6.png"
+          },
+          "likes": {
             "type": "array",
             "items": {
               "type": "string"

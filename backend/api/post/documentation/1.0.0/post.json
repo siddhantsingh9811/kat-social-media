@@ -518,7 +518,6 @@
         "required": [
           "id",
           "title",
-          "date",
           "type",
           "uuid"
         ],
@@ -531,10 +530,6 @@
           },
           "content": {
             "type": "string"
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
           },
           "type": {
             "type": "string",
@@ -659,11 +654,82 @@
                   "type": "string"
                 }
               },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "image": {
+                "type": "string"
+              },
+              "likes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
               "updated_by": {
                 "type": "string"
+              }
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "post": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "likes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "post": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -676,7 +742,6 @@
       "NewPost": {
         "required": [
           "title",
-          "date",
           "type",
           "uuid"
         ],
@@ -686,10 +751,6 @@
           },
           "content": {
             "type": "string"
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
           },
           "type": {
             "type": "string",
@@ -703,6 +764,18 @@
           },
           "author": {
             "type": "string"
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "likes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

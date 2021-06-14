@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "post"
+    "name": "post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,10 +18,6 @@
     },
     "content": {
       "type": "text"
-    },
-    "date": {
-      "type": "datetime",
-      "required": true
     },
     "type": {
       "type": "enumeration",
@@ -47,9 +44,17 @@
       "required": true
     },
     "author": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
+    },
+    "comments": {
+      "via": "post",
+      "collection": "comment"
+    },
+    "likes": {
+      "via": "post",
+      "collection": "like"
     }
   }
 }
