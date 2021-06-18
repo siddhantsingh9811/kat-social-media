@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
+    "author": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "likes"

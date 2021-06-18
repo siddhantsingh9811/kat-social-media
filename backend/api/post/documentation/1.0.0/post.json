@@ -718,7 +718,7 @@
                 "id": {
                   "type": "string"
                 },
-                "user": {
+                "author": {
                   "type": "string"
                 },
                 "post": {

@@ -9,7 +9,7 @@
       }
     },
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/likes/count",
       "handler": "like.count",
       "config": {

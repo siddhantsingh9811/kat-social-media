@@ -255,9 +255,9 @@
       }
     },
     "/likes/count": {
-      "get": {
+      "post": {
         "deprecated": false,
-        "description": "",
+        "description": "Create a new record",
         "responses": {
           "200": {
             "description": "response",
@@ -308,7 +308,21 @@
         "tags": [
           "Like"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/likes/{id}": {
@@ -522,7 +536,7 @@
           "id": {
             "type": "string"
           },
-          "user": {
+          "author": {
             "required": [
               "id",
               "username",
@@ -651,7 +665,7 @@
       },
       "NewLike": {
         "properties": {
-          "user": {
+          "author": {
             "type": "string"
           },
           "post": {

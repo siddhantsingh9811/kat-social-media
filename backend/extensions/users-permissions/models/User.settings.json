@@ -72,7 +72,7 @@
       "default": "/uploads/default_6c2aaf4db6.png"
     },
     "likes": {
-      "via": "user",
+      "via": "author",
       "collection": "like"
     }
   }
