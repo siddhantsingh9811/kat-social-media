@@ -1,6 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poiret+One&display=swap');
 
+
+:root{
+  --bg:#262D37;
+  --main:#303741;
+  --secondary:#7D8288;
+  --primary:#2BA7F3;
+}
 body{
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--bg);
+}
 
+.navbar{
+  width: 100vw;
+  height: 8vh;
+  background-color:var(--main);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+.left{
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.right{
+  margin-right: 1vw;
+  flex-grow: 1;
+}
+.kat{
+  height: 40px;
+}
+.logo{
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 25px;
+  color: var(--primary);
+}
+.logo .text{
+ 
+  
+}
+.text{
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.middle{
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+
+}
+
+.search{
+  background-color: #272E38;
+  height: 6vh;
+  width: 40vw;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+.s{
+  height: 3.2vh;
+  margin-left: 1vw;
+}
+.search .text{
+  font-size: 19px;
+  color: var(--secondary);
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right svg{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 }
