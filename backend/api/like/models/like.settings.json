@@ -18,8 +18,8 @@
       "via": "likes"
     },
     "post": {
-      "model": "post",
-      "via": "likes"
+      "via": "likes",
+      "model": "post"
     }
   }
 }

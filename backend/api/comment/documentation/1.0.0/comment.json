@@ -615,11 +615,8 @@
                   "text"
                 ]
               },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "image": {
+                "type": "string"
               },
               "uuid": {
                 "type": "uid"

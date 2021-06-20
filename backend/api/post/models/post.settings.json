@@ -27,8 +27,8 @@
       ],
       "required": true
     },
-    "images": {
-      "collection": "file",
+    "image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
