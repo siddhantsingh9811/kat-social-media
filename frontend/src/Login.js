@@ -11,7 +11,7 @@ const Login = () => {
     
     const handleSubmit = (e) =>{
         e.preventDefault()
-		cont post = {}
+		const post = {}
     } 
     return (  
         <div className="login">
