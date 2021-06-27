@@ -1,4 +1,5 @@
 import stack from './images/stack.png'
+import reviews from './images/reviews.png'
 const About = () => {
     return ( 
         <div className="about">
@@ -53,7 +54,7 @@ const About = () => {
                 <div className="unnecessary">About</div>
                 <div className="ab">
                     <div className='t'>About</div>
-                    <br />
+                    
                     <p>Mostly just a project intended to try out react whos backend grew in complexity as i tried harder and harder to avoid doing frontend</p>
                     <p>Definitely still hate frontend and fuck javascript </p>
                     <div className="buttons">
@@ -69,7 +70,16 @@ const About = () => {
                 </div>
                 <img src={stack} alt="" />
             </div>
-            
+            <div className="a" style={{backgroundColor: "transparent",height:'80vh'}}>
+                
+                <div className="ab">
+                    <div className='t'>Reviews</div>
+                    
+                    <p>Did i make this cause i have no friends? no fuck you i have friends and im gonna prove it</p>
+                    
+                </div>
+                <img src={reviews} style={{marginRight:'2vw'}} alt="" />
+            </div>
         </div>
      );
 }

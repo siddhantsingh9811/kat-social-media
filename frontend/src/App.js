@@ -3,16 +3,47 @@ import Main from "./Main";
 import Signup from "./Signup";
 import Login from "./Login";
 import About from "./About"
+import Logout from "./Logout";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useEffect, useState } from 'react';
+import axios from "axios";
+
 require('dotenv').config()
 
-console.log(process.env.REACT_APP_API_PATH)
 function App() {
+  const [token,setToken] = useState(null) ;
+  const [user,setUser] = useState(null) ;
+  const [status,setStatus] = useState(false) ;
+
+  const auth = {
+    'token':token,
+    'user':user,
+    'status':status
+  };
+  useEffect(() => {
+    const t = localStorage.getItem('token');
+    const id = localStorage.getItem('id');
+    const url = 'http://localhost:1337/users/me';
+    
+    axios.get(url,{headers:{'Authorization':'Bearer '+t}})
+    .then(response => {
+      setUser(response.data)
+      setStatus(true)
+    })
+    
+  },[])
+
+  const handleUser = (newToken,newUser,newStatus) => {
+    setToken(newToken);
+    setUser(newUser);
+    setStatus(newStatus);
+  };
+  console.log(auth)
   return (
     
     <Router>
     <div className="App">
-      <Navbar/>
+      <Navbar auth={auth}/>
 
       <Switch>
         <Route exact path="/">
@@ -23,7 +54,7 @@ function App() {
       
       <Switch>
         <Route path="/login">
-          <Login/>
+          <Login auth={auth} handleUser={handleUser}/>
         </Route>
       </Switch>
 
@@ -36,6 +67,11 @@ function App() {
       <Switch>
         <Route path="/about">
           <About/>
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/logout">
+          <Logout/>
         </Route>
       </Switch>
 
