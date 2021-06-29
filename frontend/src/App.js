@@ -22,11 +22,11 @@ function App() {
   };
   useEffect(() => {
     const t = localStorage.getItem('token');
-    const id = localStorage.getItem('id');
     const url = 'http://localhost:1337/users/me';
     
     axios.get(url,{headers:{'Authorization':'Bearer '+t}})
     .then(response => {
+      setToken(t)
       setUser(response.data)
       setStatus(true)
     })
@@ -38,7 +38,7 @@ function App() {
     setUser(newUser);
     setStatus(newStatus);
   };
-  console.log(auth)
+ 
   return (
     
     <Router>
@@ -48,7 +48,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           
-          <Main/>
+          <Main auth={auth}/>
         </Route>
       </Switch>
       
@@ -60,7 +60,7 @@ function App() {
 
       <Switch>
         <Route path="/signup">
-          <Signup/>
+          <Signup auth={auth} handleUser={handleUser}/>
         </Route>
       </Switch>
 

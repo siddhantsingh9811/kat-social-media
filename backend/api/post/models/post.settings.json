@@ -19,26 +19,6 @@
     "content": {
       "type": "text"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "image",
-        "text"
-      ],
-      "required": true
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "uuid": {
       "type": "uid",
       "required": true
@@ -55,6 +35,26 @@
     "likes": {
       "via": "post",
       "collection": "like"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "image"
+      ],
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

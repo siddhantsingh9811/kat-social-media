@@ -1,4 +1,5 @@
-const Main = () => {
+const Main = ({auth}) => {
+    
     return ( 
         <div className="main">
             Main

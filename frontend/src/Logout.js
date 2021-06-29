@@ -1,5 +1,3 @@
-import { useHistory } from "react-router-dom";
-
 const Logout = () => {
     localStorage.removeItem('token')
     window.location.replace("/");

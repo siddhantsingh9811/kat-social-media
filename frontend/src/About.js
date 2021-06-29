@@ -75,7 +75,7 @@ const About = () => {
                 <div className="ab">
                     <div className='t'>Reviews</div>
                     
-                    <p>Did i make this cause i have no friends? no fuck you i have friends and im gonna prove it</p>
+                    <p>Did i make this cause I have no friends? no fuck you i have friends and I'm gonna prove it</p>
                     
                 </div>
                 <img src={reviews} style={{marginRight:'2vw'}} alt="" />

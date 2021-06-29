@@ -281,5 +281,11 @@ body{
   align-items: center;
   border-radius: 30px;
   border: solid var(--primary) 1px;
-
+}
+.signup{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

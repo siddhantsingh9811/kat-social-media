@@ -595,8 +595,8 @@
             "required": [
               "id",
               "title",
-              "type",
-              "uuid"
+              "uuid",
+              "type"
             ],
             "properties": {
               "id": {
@@ -606,16 +606,6 @@
                 "type": "string"
               },
               "content": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string",
-                "enum": [
-                  "image",
-                  "text"
-                ]
-              },
-              "image": {
                 "type": "string"
               },
               "uuid": {
@@ -635,6 +625,16 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "text",
+                  "image"
+                ]
+              },
+              "image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
