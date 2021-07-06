@@ -30,13 +30,13 @@ body{
   color: white;
   position: fixed;
 }
-.left{
+.navbar .left{
   margin-left: 1vw;
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
-.right{
+.navbar .right{
   margin-right: 1vw;
   flex-grow: 1;
 }
@@ -52,7 +52,7 @@ body{
   color: var(--primary);
 }
 
-.text{
+.navbar .text{
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
@@ -118,7 +118,7 @@ body{
   color: var(--primary);
   
 }
-.buttons{
+.about .buttons{
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -214,10 +214,15 @@ body{
   border-radius: 5%;
   background-color: var(--main);
 }
-.form{
+.login .form{
   display: flex;
   flex-direction: column;
 }
+.signup .form{
+  display: flex;
+  flex-direction: column;
+}
+
 .box .logo {
   display: flex;
   flex-direction: column;
@@ -256,7 +261,7 @@ body{
   z-index: 10;
   
 }
-.box button{
+button{
   background: none;
   border: none;
   height: 30px;
@@ -268,7 +273,7 @@ body{
   font-size: 1.4em;
   border-radius: 30px;
 }
-.box .button{
+button{
   display: flex;
   height: 30px;
   padding: 2px;
@@ -288,4 +293,83 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.create{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create .cont{
+  padding: 2vw;
+  width: 50vw;
+  border-radius: 5%;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  
+}
+.cont .h{
+
+  font-weight: 400;
+  color:var(--primary);
+  font-size: 2.1em;
+}
+.createField{
+  display: flex;
+  flex-direction: row;
+}
+.createField .left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 3;
+}
+.createField .right{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.create .field{
+  font-size: 1.6em;
+  margin-top: 1vh;
+}
+.create .text{
+  color: white;
+}
+.create .buttons{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  
+}
+.buttons button{
+  margin-right: 5vw;
+}
+.create input{
+  background: none;
+  border: none;
+  color: white;
+  
+}
+.create input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+.create .contentField{
+  background: none;
+  border: 1px solid white;
+
+  color: white;
+  border-radius: 5px;
+  padding:10px;
+  font-size: 0.8em;
+}
+.create .titleField{
+  font-size: 0.8em;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding:10px;
 }

@@ -79,7 +79,7 @@ function App() {
 
       <Switch>
         <Route path="/create">
-          <Create/>
+          <Create auth={auth}/>
         </Route>
       </Switch>
 
