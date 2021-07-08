@@ -4,6 +4,7 @@ import Signup from "./Signup";
 import Login from "./Login";
 import About from "./About"
 import Logout from "./Logout";
+import Create from "./Create"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import axios from "axios";
@@ -69,9 +70,16 @@ function App() {
           <About/>
         </Route>
       </Switch>
+      
       <Switch>
         <Route path="/logout">
           <Logout/>
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path="/create">
+          <Create auth={auth}/>
         </Route>
       </Switch>
 
