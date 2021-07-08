@@ -11,7 +11,7 @@ module.exports = {
     if (ctx.is("multipart")){
       const {data,files} = parseMultipartData(ctx);
       data.author = ctx.state.user.id;
-      entity = await strapi.services.coment.create(data,{files});
+      entity = await strapi.services.comment.create(data,{files});
 
     }
     else {
