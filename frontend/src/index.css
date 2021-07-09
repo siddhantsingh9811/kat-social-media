@@ -326,12 +326,14 @@ button{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-grow: 3;
+  flex-grow: 2;
 }
 .createField .right{
   flex-grow: 1;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .create .field{
   font-size: 1.6em;
@@ -348,6 +350,7 @@ button{
 }
 .buttons button{
   margin-right: 5vw;
+  font-weight: 200;
 }
 .create input{
   background: none;
@@ -365,11 +368,36 @@ button{
   color: white;
   border-radius: 5px;
   padding:10px;
-  font-size: 0.8em;
+  font-size: 18px;
 }
 .create .titleField{
-  font-size: 0.8em;
+  font-size: 18px;
   border: 1px solid white;
   border-radius: 5px;
   padding:10px;
+}
+.selector{
+  border: 1px solid white;
+  font-size: 1.5em;
+  
+  border-radius: 10%;
+  color: white;
+  margin-top: 5vh;
+}
+.upload{
+  border: 1px solid var(--primary);
+  color:var(--primary);
+  font-size: 1em;
+  font-weight: 400;
+  padding: 5px 10px 5px 10px;
+  border-radius: 40px;
+  margin-top: 5vh;
+}
+.op1,.op2{
+  cursor: pointer;
+  padding: 5px;
+}
+.op2{
+  
+  border-top: 1px solid white;
 }
