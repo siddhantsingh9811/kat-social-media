@@ -2,7 +2,7 @@ const Main = ({auth}) => {
     
     return ( 
         <div className="main">
-            
+            test
         </div>
          );
 }
