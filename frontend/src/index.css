@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poiret+One&display=swap');
-
-
 :root{
   --bg:#262D37;
   --main:#303741;
@@ -16,7 +14,6 @@ body{
   overflow-x: hidden;
   user-select: none; 
 }
-
 .navbar{
   width: 100vw;
   height: 8vh;
@@ -51,20 +48,17 @@ body{
   font-size: 25px;
   color: var(--primary);
 }
-
 .navbar .text{
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
 }
-
 .middle{
   flex-grow: 2;
   display: flex;
   align-items: center;
 
 }
-
 .search{
   background-color: #272E38;
   height: 6vh;
@@ -94,7 +88,6 @@ body{
   padding-right: 10px;
   cursor: pointer;
 }
-
 .about .main{
   height: 100vh;
   width: 100vw;
@@ -176,12 +169,10 @@ body{
 .a .b1{
   transform: none;
 }
-
 .a img{
   height: 75vh;
   align-self: flex-end;
 }
-
 .unnecessary{
   font-family: sans-serif;
   font-size: 9em;
@@ -191,8 +182,6 @@ body{
   opacity: 0.1;
   transform: translateX(-7%);
 }
-
-
 .logout{
   position: absolute;
   top: 50%;
@@ -200,7 +189,6 @@ body{
   transform: translate(-50%,-50%);
   color: white;
 }
-
 .login{
   height: 100vh;
   width: 100vw;
@@ -222,7 +210,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-
 .box .logo {
   display: flex;
   flex-direction: column;
@@ -402,7 +389,6 @@ button{
   
   border-top: 1px solid white;
 }
-
 .imageField{
   height: 30vh;
   width: 30vw;
@@ -411,7 +397,4 @@ button{
   border-radius: 5px;
   padding:10px;
   display: flex;
-  
-  
-
 }

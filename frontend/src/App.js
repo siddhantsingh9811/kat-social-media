@@ -48,7 +48,6 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          
           <Main auth={auth}/>
         </Route>
       </Switch>
