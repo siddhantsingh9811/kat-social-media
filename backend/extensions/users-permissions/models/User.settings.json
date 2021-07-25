@@ -67,13 +67,19 @@
       "via": "author",
       "collection": "comment"
     },
-    "image": {
-      "type": "string",
-      "default": "/uploads/default_6c2aaf4db6.png"
-    },
     "likes": {
       "via": "author",
       "collection": "like"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

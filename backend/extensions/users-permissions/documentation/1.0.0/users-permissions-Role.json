@@ -573,14 +573,14 @@
                     "type": "string"
                   }
                 },
-                "image": {
-                  "type": "string"
-                },
                 "likes": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "image": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

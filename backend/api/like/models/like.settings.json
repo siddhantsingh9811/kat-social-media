@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "author": {
+      "via": "likes",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "likes"
+      "model": "user"
     },
     "post": {
       "via": "likes",
