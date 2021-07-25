@@ -1,7 +1,7 @@
-const TextPost = ({auth}) => {
+const TextPost = ({content,auth}) => {
     return ( 
-        <div className="textpost">
-
+        <div className="textpost post">
+            {content.title}
         </div>
      );
 }

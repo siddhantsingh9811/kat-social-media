@@ -1,7 +1,7 @@
-const ImagePost = ({auth}) => {
+const ImagePost = ({content,auth}) => {
     return ( 
-        <div className="imagepost">
-
+        <div className="imagepost post">
+            {content.title}
         </div>
      );
 }
