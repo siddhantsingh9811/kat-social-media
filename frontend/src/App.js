@@ -12,9 +12,9 @@ import axios from "axios";
 require('dotenv').config()
 
 function App() {
-  const [token,setToken] = useState(null) ;
-  const [user,setUser] = useState(null) ;
-  const [status,setStatus] = useState(false) ;
+  const [token,setToken] = useState(null);
+  const [user,setUser] = useState(null);
+  const [status,setStatus] = useState(false);
 
   const auth = {
     'token':token,
