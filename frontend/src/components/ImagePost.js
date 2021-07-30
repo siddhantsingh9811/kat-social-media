@@ -40,6 +40,9 @@ const ImagePost = ({content,auth}) => {
             headers: { Authorization: `Bearer ${auth.token}` }
         }).then((response)=>{console.log(response);setLikeno(parseInt(likeno)-1)}).catch((err)=>{console.log(err)})
     }
+    const countIncrease = ()=>{
+        setCommentno(parseInt(commentno)+1)
+    }
     return ( 
         <div className="imagepost post">
             <div className="top">
@@ -77,7 +80,7 @@ const ImagePost = ({content,auth}) => {
 
             </div>
             </div>
-            <Comments comments={content.comments}/>
+            <Comments countIncrease={countIncrease} id={content.id} auth={auth} open={open} comments={content.comments}/>
             
         </div>
      );
