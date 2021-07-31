@@ -17,6 +17,25 @@ const Signup = ({auth,handleUser}) => {
                 email:email,
                 username: username,
                 password: password,
+                image:{
+                    "id": 71,
+                    "name": "default.png",
+                    "alternativeText": "",
+                    "caption": "",
+                    "width": 70,
+                    "height": 69,
+                    "formats": null,
+                    "hash": "default_af544244c7",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 1.64,
+                    "url": "/uploads/default_af544244c7.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-07-25T08:27:22.094Z",
+                    "updated_at": "2021-07-25T08:27:22.129Z"
+                }
             })
             .then(response => {
                 // Handle success.

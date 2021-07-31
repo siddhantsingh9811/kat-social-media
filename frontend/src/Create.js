@@ -36,7 +36,6 @@ const Create = ({auth}) => {
 				type:type,
 				image:img
 			}
-			console.log(postData)
 			const create_post = axios({
 				method:'POST',
 				url:'http://localhost:1337/posts',

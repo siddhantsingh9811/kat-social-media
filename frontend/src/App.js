@@ -5,6 +5,7 @@ import Login from "./Login";
 import About from "./About"
 import Logout from "./Logout";
 import Create from "./Create"
+import Account from "./Account";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 import { useEffect, useState } from 'react';
@@ -24,10 +25,7 @@ function App() {
   };
   useEffect(() => {
     const t = localStorage.getItem('token');
-    if (!t && window.location.href != 'http://localhost:3000/login'){
-      window.location.replace('http://localhost:3000/login');
-    }
-    else{
+    
 
       const url = 'http://localhost:1337/users/me';
       
@@ -37,7 +35,7 @@ function App() {
         setUser(response.data)
         setStatus(true)
       })
-    }
+    
       
   },[])
 
@@ -86,6 +84,11 @@ function App() {
       <Switch>
         <Route path="/create">
           <Create auth={auth}/>
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/account">
+          <Account auth={auth}/>
         </Route>
       </Switch>
 

@@ -45,7 +45,7 @@ body{
   height: 40px;
   width: 40px;
   border-radius: 40px;
-
+  cursor: pointer;
 }
 .logo{
   width: auto;
@@ -414,6 +414,10 @@ button{
 }
 .main .left{
   flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 0;
+
 }
 .main .right{
   flex-grow: 2;
@@ -662,4 +666,45 @@ button{
   height: 100%;
   width: 100%;
   overflow-y: auto;
+}
+.main .profile{
+  width: 20vw;
+  height: 40vh;
+  margin-top: 30vh;
+  background-color: var(--main);
+  border-radius: 15px;
+  position: fixed;
+  margin-right: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  overflow: hidden;
+  
+  
+}
+.profile .edit{
+  height: 25px;
+  position: absolute;
+  transform: translateX(60px);
+  cursor: pointer;
+}
+.profile .userimage{
+  margin-top: 2vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+.profile .username{
+  color: white;
+  font-size: 1.5em;
+}
+.profile .email{
+  color: white;
+  font-size: 0.8em;
+  color: var(--secondary);
 }

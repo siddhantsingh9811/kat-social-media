@@ -2,20 +2,20 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ImagePost from "./ImagePost";
 import TextPost from "./TextPost";
-const Posts = ({type,auth}) => {
+const UserPosts = ({type,auth}) => {
     const [posts,setPosts] = useState([])
     useEffect(()=>{
         try {
             if (type === "all"){
                 const get_posts = axios({
                     method:'GET',
-                    url:"http://localhost:1337/posts"
+                    url:`http://localhost:1337/posts?author.id=${auth.user.id}`
                 }).then(response=>{setPosts(response.data)})
             }
             else{
                 const get_posts = axios({
                     method:'GET',
-                    url:`http://localhost:1337/posts?type=${type}`
+                    url:`http://localhost:1337/posts?type=${type}&author.id=${auth.user.id}`
                 }).then(response=>{setPosts(response.data)})
             }
             
@@ -38,4 +38,4 @@ const Posts = ({type,auth}) => {
      );
 }
  
-export default Posts;
+export default UserPosts;
