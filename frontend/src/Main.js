@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Posts from "./components/Posts";
+import Users from "./components/Users";
 const Main = ({auth}) => {
     const [type,setType] = useState('all')
     const [o1,setO1] = useState({color:"var(--primary)",bor:"0px -1px 0px var(--primary) inset"})
@@ -41,11 +42,7 @@ const Main = ({auth}) => {
                 </div>
             </div>
             <div className="right">
-                <div className="users">
-                    <div className="header">
-                        <div className="h">Users</div>
-                    </div>
-                </div>
+                <Users/>
             </div>
         </div>
          );

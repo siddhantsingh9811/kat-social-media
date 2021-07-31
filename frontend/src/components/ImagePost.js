@@ -13,7 +13,7 @@ const ImagePost = ({content,auth}) => {
         const likes = content.likes
         likes.map((like)=>{
             try {
-                if (like.author == auth.user.id){
+                if (like.author === auth.user.id){
                     setLikeid(like.id)
                     setLiked(true)
                 }

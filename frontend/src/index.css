@@ -450,7 +450,7 @@ button{
   position: fixed;
   margin-left: 2vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  overflow-y:hidden;
+  overflow: hidden;
 }
 .header{
   width: 100%;
@@ -633,4 +633,33 @@ button{
   margin-left: 10px;
   font-size: 0.9em;
   transform: translateY(-50%);
+}
+.users .top{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.users .userimage{
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  
+}
+.users .info{
+  padding-left: 10px;
+  color: white;
+}
+.users .username{
+  font-size: 0.7em;
+}
+.users .title{
+  font-size: 0.9em;
+  line-height: none;
+
+}
+.users .display{
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
 }
