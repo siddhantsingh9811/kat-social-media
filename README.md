@@ -7,3 +7,6 @@ Uses Strapi a headless CMS cause well this was gonna be a small test but stil pr
 ## Frontend
 React which well idk at all
 did the design in [figma](https://www.figma.com/file/7LFPbs8wLAYQpYzdJAd9eR/Untitled?node-id=0%3A1)
+
+## Hosting
+The backend is hosted on digital ocean and the frontend was hosted through Vercel you can try it out [here](https://kat-rho.vercel.app/)
