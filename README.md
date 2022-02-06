@@ -1,4 +1,4 @@
-# Trying Out React
+# Kat Social Media
 Initially a small blog website made to try out react which somehow turned into a whole social media application
 
 ## Backend
